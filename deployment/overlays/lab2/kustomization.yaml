@@ -4,7 +4,6 @@ namespace: argocd
 
 resources:
   - ../../base
-  - dev-daitatmane-apps.yaml
 
 configMapGenerator:
 - name: argocd-cmd-params-cm

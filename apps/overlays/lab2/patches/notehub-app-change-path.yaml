@@ -1,0 +1,10 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: notehub
+  namespace: argocd
+spec:
+  sources:
+    - repoURL: https://gitlab.enpos.fr/enpos/deployments/notehub.git
+      targetRevision: main
+      path: "overlays/lab2"

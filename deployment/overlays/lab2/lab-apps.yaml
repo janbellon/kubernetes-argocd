@@ -11,5 +11,6 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: apps/overlays/platform-prod-2
-    repoURL: https://gitlab-iliad.mgt.proxad.net/platform/deployements/argocd.git
+    path: apps/overlays/lab2
+    targetRevision: main
+    repoURL: https://gitlab.enpos.fr/enpos/deployments/argocd.git

@@ -4,7 +4,6 @@ namespace: argocd
 
 resources:
   - ../../base
-  - plf-prod-2-apps.yaml
 
 configMapGenerator:
 - name: argocd-cmd-params-cm

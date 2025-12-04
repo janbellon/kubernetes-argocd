@@ -1,13 +1,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: argocd
-
 resources:
-  - ../../base
-  - dev-pgalceran-apps.yaml
+  - argocd.yaml
+  - argocd-nodeport.yaml
 
 configMapGenerator:
-- name: argocd-cmd-params-cm
+- name: argocd-cm
   behavior: merge
-  literals:
-  - server.insecure="true"
+  envs:
+  - envs/argocd-cm
+
