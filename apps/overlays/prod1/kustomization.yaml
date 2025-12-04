@@ -4,4 +4,4 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-  ../../base/notehub
+  - ../../base/notehub

@@ -4,6 +4,7 @@ namespace: argocd
 
 resources:
   - ../../base
+  - lab-apps.yaml
 
 configMapGenerator:
 - name: argocd-cmd-params-cm

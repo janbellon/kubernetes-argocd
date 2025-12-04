@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-  ../../base/notehub
+  - ../../base/notehub
 
 patches:
   - path: patches/notehub-app-change-path.yaml

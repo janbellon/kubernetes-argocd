@@ -13,4 +13,4 @@ spec:
   source:
     path: apps/overlays/dev-jbellon
     targetRevision: main
-    repoURL: https://gitlab-iliad.mgt.proxad.net/platform/deployements/argocd.git
+    repoURL: https://gitlab.enpos.fr/enpos/deployements/argocd.git
