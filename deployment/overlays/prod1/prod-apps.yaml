@@ -13,4 +13,4 @@ spec:
   source:
     path: apps/overlays/prod1
     targetRevision: main
-    repoURL: https://gitlab.enpos.fr/enpos/deployements/argocd.git
+    repoURL: https://gitlab.enpos.fr/enpos/deployments/argocd.git
