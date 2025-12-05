@@ -11,6 +11,6 @@ spec:
     name: in-cluster
   project: default
   source:
-    path: apps/overlays/dev-jbellon
+    path: apps/overlays/prod1
     targetRevision: main
     repoURL: https://gitlab.enpos.fr/enpos/deployements/argocd.git
