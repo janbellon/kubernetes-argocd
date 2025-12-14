@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: notehub
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: notehub
+  sources:
+    - repoURL: https://gitlab.nobell.fr/nobell/kubernetes/notehub.git
+      targetRevision: main
+      path: "overlays/prod1"
+  syncPolicy:
+    syncOptions:
+    - createNamespace=true
