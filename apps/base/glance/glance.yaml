@@ -12,7 +12,7 @@ spec:
   sources:
     - repoURL: https://gitlab.nobell.fr/nobell/kubernetes/glance.git
       targetRevision: main
-      path: "overlays/prod1"
+      path: "overlays/nbl-prod"
   syncPolicy:
     syncOptions:
     - createNamespace=true
