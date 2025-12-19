@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: homepage
+  namespace: homepage
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: homepage
+  sources:
+    - repoURL: https://gitlab.nobell.fr/nobell/kubernetes/homepage.git
+      targetRevision: main
+      path: "overlays/nbl-prod"
+  syncPolicy:
+    syncOptions:
+    - createNamespace=true
