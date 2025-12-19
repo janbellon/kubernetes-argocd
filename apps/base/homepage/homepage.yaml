@@ -14,5 +14,8 @@ spec:
       targetRevision: main
       path: "overlays/nbl-prod"
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
     - createNamespace=true
