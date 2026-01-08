@@ -1,0 +1,21 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: linkwarden
+  namespace: linkwarden
+spec:
+  project: default
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: linkwarden
+  sources:
+    - repoURL: https://gitlab.nobell.fr/nobell/kubernetes/linkwarden.git
+      targetRevision: main
+      path: "overlays/nbl-prod"
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - createNamespace=true
